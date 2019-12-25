@@ -34,7 +34,9 @@ class Products {
 
 // dispaly products
 class UI {
-  displayProducts(products) {}
+  displayProducts(products) {
+    console.log(products);
+  }
 }
 
 // local storage
