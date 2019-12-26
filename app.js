@@ -72,6 +72,7 @@ class UI {
         event.target.innerText = "In Cart";
         event.target.disabled = true;
         // get product from products
+
         // add product to the cart
         // save cart in local storage
         // set cart value
@@ -87,7 +88,7 @@ class Storage {
   static saveProducts(products) {
     localStorage.setItem("products", JSON.stringify(products));
   }
-  static getProducts(id) {
+  static getProduct(id) {
     let products = JSON.parse(localStorage.getItem("products"));
     return products.find(product => product.id === id);
   }
