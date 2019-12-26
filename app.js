@@ -69,6 +69,12 @@ class UI {
         button.addEventListener("click", event => {
           event.target.innerText = "In Cart";
           event.target.disabled = true;
+          // get product from products
+          // add product to the cart
+          // save cart in local storage
+          // set cart value
+          // display cart item
+          // show the cart
         });
       }
     });
