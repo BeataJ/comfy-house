@@ -102,16 +102,16 @@ class UI {
     div.classList.add("cart-item");
     div.innerHTML = `
       <img src="./images/product-1.jpeg" alt="product">
-          <div>
-            <h4>queen bed</h4>
-            <h5>$9.00</h5>
-            <span class="remove-item">remove</span>
-          </div>
-          <div>
-            <i class="fas fa-chevron-up"></i>
-            <p class="item-amount">1</p>
-            <i class="fas fa-chevron-down"></i>
-          </div>
+      <div>
+        <h4>queen bed</h4>
+        <h5>$9.00</h5>
+        <span class="remove-item">remove</span>
+      </div>
+      <div>
+        <i class="fas fa-chevron-up"></i>
+        <p class="item-amount">1</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     `;
   }
 }
