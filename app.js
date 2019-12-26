@@ -73,9 +73,10 @@ class UI {
         event.target.disabled = true;
         // get product from products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
-        console.log(cartItem);
         // add product to the cart
+        cart = [...cart, cartItem];
         // save cart in local storage
+        Storage.saveCart(cart);
         // set cart value
         // display cart item
         // show the cart
@@ -92,6 +93,9 @@ class Storage {
   static getProduct(id) {
     let products = JSON.parse(localStorage.getItem("products"));
     return products.find(product => product.id === id);
+  }
+  static saveCart(cart) {
+    localStorage.setItem("cart", JSON.stringify("cart"));
   }
 }
 
