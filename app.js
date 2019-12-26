@@ -95,7 +95,7 @@ class Storage {
     return products.find(product => product.id === id);
   }
   static saveCart(cart) {
-    localStorage.setItem("cart", JSON.stringify("cart"));
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 }
 
