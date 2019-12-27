@@ -86,7 +86,6 @@ class UI {
       });
     });
   }
-
   setCartValue(cart) {
     let tempTotal = 0;
     let itemsTotal = 0;
@@ -97,7 +96,6 @@ class UI {
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
     cartItems.innerText = itemsTotal;
   }
-
   addCartItem(item) {
     const div = document.createElement("div");
     div.classList.add("cart-item");
@@ -116,7 +114,6 @@ class UI {
     `;
     cartContent.appendChild(div);
   }
-
   showCart() {
     cartOverlay.classList.add("transparentBcg");
     cartDOM.classList.add("showCart");
@@ -143,7 +140,8 @@ class UI {
     });
   }
   clearCart() {
-    console.log(this);
+    let cartItems = cart.map(item => item.id);
+    console.log(cartItems);
   }
 }
 
