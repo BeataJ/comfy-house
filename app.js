@@ -140,6 +140,7 @@ class UI {
       this.clearCart();
     });
     // cart functionality
+    cartContent.addEventListener("click", event => {});
   }
   clearCart() {
     let cartItems = cart.map(item => item.id);
