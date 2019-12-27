@@ -140,7 +140,12 @@ class UI {
       this.clearCart();
     });
     // cart functionality
-    cartContent.addEventListener("click", event => {});
+    cartContent.addEventListener("click", event => {
+      if (event.target.classList.contains("remove-item")) {
+        let removeItem = event.target;
+        console.log(removeItem);
+      }
+    });
   }
   clearCart() {
     let cartItems = cart.map(item => item.id);
